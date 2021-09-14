@@ -570,3 +570,128 @@ section p, h2, h3{
     font-weight: 500;
     margin-left: 10px;
 }
+
+#specials{
+    height: 80vh;
+    background-color: #0c0b09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+#specials .section_title{
+    width: 80%;
+}
+
+.specials_info{
+    width: 80%;
+    height: 50%;
+    margin-top: 25px;
+}
+
+.up{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 12px;
+    font-weight: 100;
+    text-decoration: none;
+    border: 2px solid #cda45e;
+    border-radius: 50%;
+    color: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.spec_select{
+    width: 25%;
+    border-right: 2px solid #cda45e;
+    height: 100%;
+}
+
+.spec_option{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    /* margin-top: 10px; */
+    /* padding-left: 20px; */
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.spec_option:hover{
+    background-color: #cda45e;
+}
+
+.spec_option:hover a{
+    color: #0c0b09;
+}
+
+.spec_option a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-self: center;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.spec_meal1, .spec_meal2, .spec_meal3, .spec_meal4, .spec_meal5{
+    display: none;
+    height: 40vh;
+    width: 60%;
+    position: absolute;
+    left: 430px;
+    top: 174px;
+    transition: all 1s ease;
+    display: flex;
+}
+
+.spec_op1:hover .spec_meal1 .sm_info, .spec_op1:hover .spec_meal1 .sm_pic{
+    display: flex;
+}
+
+.spec_op2:hover .spec_meal2 .sm_info, .spec_op2:hover .spec_meal2 .sm_pic{
+    display: flex;
+}
+.spec_op3:hover .spec_meal3 .sm_info, .spec_op3:hover .spec_meal3 .sm_pic{
+    display: flex;
+}
+.spec_op4:hover .spec_meal4 .sm_info, .spec_op4:hover .spec_meal4 .sm_pic{
+    display: flex;
+}
+.spec_op5:hover .spec_meal5 .sm_info, .spec_op5:hover .spec_meal5 .sm_pic{
+    display: flex;
+}
+
+.sm_info{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sm_info h1, p{
+    font-family: 'Playfair ', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sm_info p{
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+.sm_info h1{
+    color: white;
+    font-weight: 600;
+}
+
+.sm_pic{
+    display: none;
+}
