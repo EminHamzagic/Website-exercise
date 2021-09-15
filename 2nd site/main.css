@@ -695,3 +695,158 @@ section p, h2, h3{
 .sm_pic{
     display: none;
 }
+
+.about_text p{
+    margin: 10px 0px;
+}
+
+#events{
+    width: 100%;
+    height: 185vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/events-bg.jpg"), repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.events_space{
+    width: 100%;
+    height: 80vh;
+}
+
+#events .section_title{
+    width: 80%
+}
+
+.events_container{
+    display: flex;
+    width: 85%;
+    height: 72vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.events_pic, .events_text{
+    width: 48%;
+    height: 85%;
+}
+
+.events_pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events_pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.events_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.events_text h3{
+    color: #cda45e;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.events_text span{
+    text-decoration: underline;
+    text-decoration-color: #cda45e;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.events_text p{
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.events_dots{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+
+.dot:hover{
+    background-color: #cda45e;
+}
+
+#booking{
+    background-color: #0c0b09;
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking .section_title{
+    width: 85%;
+}
+
+.booking_reg_container{
+    width: 85%;
+    height: 80vh;
+}
+
+.booking_reg{
+    width: 100%;
+    height: 80%;
+}
+
+.booking_reg input{
+    width: 100%;
+    height: 50%;
+}
+
+.book_name{
+}
+
+.book_email{
+}
+
+.book_phone{
+}
+
+.book_date{
+}
+
+.book_time{
+}
+
+.book_num{
+}
+
+
+.book_msg{
+
+}
