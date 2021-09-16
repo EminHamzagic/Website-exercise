@@ -11,6 +11,7 @@ html{
 section{
     width: 100%;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 section p, h2, h3{
@@ -805,12 +806,14 @@ section p, h2, h3{
     height: 88vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 
 #booking .section_title{
     width: 85%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .booking_reg_container{
@@ -820,33 +823,214 @@ section p, h2, h3{
 
 .booking_reg{
     width: 100%;
-    height: 80%;
+    height: 70%;
 }
 
-.booking_reg input{
+.row{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txtarea{
     width: 100%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
 }
 
-.book_name{
+.booking_reg textarea{
+    width: 99%;
+    height: 87%;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #aaaaaa;
+    background-color: #0c0b09;
+    color: #aaaaaa;
+    padding: 10px 0px 0px 10px;
+    transition: all 0.5 ease;
 }
 
-.book_email{
+.row input{
+    background-color: #0c0b09;
+    border: 1px solid #aaaaaa;
+    color: #aaaaaa;
+    font-family: 'Poppins', sans-serif;
+    width: 32%;
+    height: 65%;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-left: 10px;
+    transition: all 0.5 ease;
 }
 
-.book_phone{
+.row input:focus{
+    border: 1px solid #cda45e;
+    border-radius: 0;
+    outline: 0;
 }
 
-.book_date{
+.txtarea textarea:focus{
+    border: 1px solid #cda45e;
+    border-radius: 0;
+    outline: 0;
 }
 
-.book_time{
+.booking_button{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
 }
 
-.book_num{
+.booking_button button{
+    width: 15%;
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: #cda45e;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
 }
 
+#testimonials{
+    width: 100%;
+    height: 102vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(26, 24, 20);
+    align-items: center;
+    flex-direction: column;
+}
 
-.book_msg{
+#testimonials .section_title{
+    width: 85%;
+    margin-bottom: 30px;
+}
 
+.testimonials_container{
+    width: 85%;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.testi_imp{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testi_dots{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testi_card{
+    width: 28%;
+    height: 85%;
+    
+}
+
+.testi_text{
+    width: 100%;
+    height: 60%;
+    background-color: #26231d;
+    border-radius: 10px;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+.testi_text i{
+    color: #cda45e;
+    margin: 0px 10px;
+}
+
+.testi_text p{
+    font-style: italic;
+    font-size: 15px;
+    line-height: 23px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testi_pic{
+    position: relative;
+    top: -40px;
+    margin-left: 30px;
+}
+
+.testi_pic h4{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.testi_pic p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+.testi_pic p, h4{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.testi_pic img{
+    width: 80px;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+#gallery{
+    width: 100%;
+    height: 110vh;
+    background-color: #0c0b09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gallery .section_title{
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+.photos{
+    width: 98%;
+    height: 72%;
+    background-color: #3b3b3b;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3px 3px;
+    box-sizing: border-box;
+}
+
+.photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.photos img:hover{
+    transform: scale(1.1);
+}
+
+.photos div{
+    overflow: hidden;
 }
