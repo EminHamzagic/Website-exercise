@@ -44,6 +44,7 @@ section p, h2, h3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: 1px solid #575757;
 }
 
 #nav h1{
@@ -84,6 +85,10 @@ section p, h2, h3{
     padding: 7px 28px;
     border-radius: 30px;
     font-size: 14px;
+}
+
+.book_table_btn:hover{
+    background-color: #cda45e;
 }
 
 .nav_list_container{
@@ -1033,4 +1038,415 @@ section p, h2, h3{
 
 .photos div{
     overflow: hidden;
+}
+
+#chefs{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0c0b09;
+}
+
+#chefs .section_title{
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+.chefs_container{
+    width: 85%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chef1, .chef2, .chef3{
+    width: 30%;
+    height: 100%;
+    transition: all 3s ease;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chef1{
+    background: url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.chef1:hover{
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.chef2{
+    background: url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.chef2:hover{
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.chef3{
+    background: url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.chef3:hover{
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.chef1:hover .chef_info, .chef2:hover .chef_info, .chef3:hover .chef_info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chef_info{
+    width: 100%;
+    height: 30%;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.562));
+    display: none;
+    animation-name: chef_info_anim;
+    animation-duration: 1s;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+    transition: all 1s ease;
+}
+
+.chef_info h3{
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.chef_info p{
+    margin: 0;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.chef_info .chef_media{
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes chef_info_anim{
+    0%{height: 10%;}
+    100%{height: 30;}
+}
+
+#contact{
+    width: 100%;
+    height: 180vh;
+    background-color: #0c0b09;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact .section_title{
+    width: 85%;
+    /* margin-bottom: 30px; */
+}
+
+#contact iframe{
+    width: 100%;
+    height: 38%;
+}
+
+.contact_info{
+    width: 85%;
+    height: 40%;
+    display: flex;
+}
+
+.info{
+    height: 85%;
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact_msg{
+    height: 100%;
+    width: 70%;
+}
+
+
+.info_part{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info_icon{
+    width: 13.5%;
+    height: 50%;
+    background-color: #cda45e;
+    font-size: 25px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_txt h3{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.info_txt{
+    width: 80.5%;
+}
+
+.info_txt p{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.c_input{
+    width: 100%;
+    height: 85%;
+}
+
+.c_button{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_button button{
+    width: 25%;
+    height: 60%;
+    border: none;
+    border-radius: 30px;
+    background-color: #cda45e;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.c_input textarea{
+    width: 98.5%;
+    height: 57%;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #aaaaaa;
+    background-color: #0c0b09;
+    color: #aaaaaa;
+    padding: 10px 0px 0px 10px;
+    transition: all 0.5 ease;
+}
+
+.c_input .row input{
+    background-color: #0c0b09;
+    border: 1px solid #aaaaaa;
+    color: #aaaaaa;
+    font-family: 'Poppins', sans-serif;
+    width: 48.5%;
+    height: 65%;
+    box-sizing: border-box;
+    padding-top: 3px;
+    padding-left: 10px;
+    transition: all 0.5 ease;
+}
+
+.c_input .row input:focus{
+    border: 1px solid #cda45e;
+    border-radius: 0;
+    outline: 0;
+}
+
+.c_input textarea:focus{
+    border: 1px solid #cda45e;
+    border-radius: 0;
+    outline: 0;
+}
+
+#links{
+    width: 100%;
+    height: 55vh;
+    background-color: #0c0b09;
+    border-bottom: 1px solid #575757;
+    border-top: 1px solid #575757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links_container{
+    width: 85%;
+    height: 70%;
+    display: flex;
+}
+
+.info_sec{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link_list{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub{
+    width: 32%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info_sec h2{
+    margin: 0;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link_icon{
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_icon div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    font-size: 15px;
+    color: white;
+    background-color: #242020;
+    border-radius: 50%;
+}
+
+.link_list h4{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.link_list ul{
+    height: 80%;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link_list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.link_list ul li i{
+    font-size: 10px;
+    color: #cda45e;
+    margin: 0px 10px;
+}
+
+.sub h4{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.sub p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub div{
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #26231d;
+    border: 1px solid #3b3b3b;
+    display: flex;
+    align-items: center;
+}
+
+.sub div input{
+    background-color: #26231d;
+    height: 30px;
+    border: none;
+    width: 55%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.sub div button{
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    width: 40%;
+    height: 45px;
+    color: white;
+    background-color: #cda45e;
+    font-size: 18px;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+footer div p, footer div span{
+    display: inline-block;
+}
+
+footer span{
+    color: #cda45e;
+    font-size: 14px;
 }
