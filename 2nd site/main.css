@@ -4,6 +4,10 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
+*{
+    /* box-sizing: border-box; */
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -282,7 +286,7 @@ section p, h2, h3{
 .about_img{
     border: 4px solid rgb(75, 75, 75);
     width: 100%;
-    height: 65vh;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     transition: 1s ease;
@@ -708,7 +712,7 @@ section p, h2, h3{
 
 #events{
     width: 100%;
-    height: 185vh;
+    height: 100vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/events-bg.jpg"), repeat;
     display: block;
     background-position: center;
@@ -718,6 +722,10 @@ section p, h2, h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.gap2{
+    height: 80vh;
 }
 
 .events_space{
@@ -1449,4 +1457,191 @@ footer div p, footer div span{
 footer span{
     color: #cda45e;
     font-size: 14px;
+}
+
+.mobile_list{
+    display: none;
+    width: 50px;
+    height: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.mline{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid white;
+    opacity: 1;
+}
+
+.mlist{
+    width: 95%;
+    background-color: white;
+    height: 85vh;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    display: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mlist_list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mlist_list li{
+    margin: 10px 0px;
+}
+
+.mlist_list li:hover{
+    color: #cda45e;
+}
+
+.mlist_list li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+    }
+    section{
+        background-position: left;
+    }
+    .specials_info{
+        flex-direction: column;
+    }
+    .nav_list{
+        display: none;
+    }
+    #nav_btn{
+        display: none;
+    }
+    #lng{
+        display: none;
+    }
+    .home_bar_sec{
+        width: 100%;
+    }
+    .mobile_list{
+        display: flex;
+    }
+    .mobile_list:hover .mlist{
+        display: block;
+    }
+    #nav{
+        justify-content: center;
+        /* height: 8vh; */
+        padding: 0px 20px;
+        position: sticky;
+    }
+    .home_section{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 89vh;
+        padding-top: 150px;
+    }
+    #about{
+        height: 120vh;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .about_text{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .about_pic{
+        width: 90%;
+        height: 30vh;
+        margin: 0;
+    }
+    .about_text h3{
+        font-size: 22px;
+    }
+    .about_text p{
+        font-size: 15px;
+    }
+    #about2{
+        height: 140vh;
+    }
+    .ab2_cards_container{
+        flex-direction: column;
+        width: 95%;
+        justify-content: space-around;
+        height: 100vh;
+    }
+    .ab2_card{
+        width: 100%;
+        height: 30vh;
+    }
+    .section_title{
+        width: 95%;
+    }
+    .card_content{
+        padding-top: 15px;
+    }
+    #menu{
+        height: 150vh;
+    }
+    .menu_choice{
+        width: 80%;
+    }
+    .menu_menu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+    .meal{
+        width: 90%;
+        height: 9%;
+    }
+    #specials{
+        height: 140vh;
+    }
+    .specials_info{
+        width: 95%;
+    }
+    .spec_select{
+        width: 100%;
+        border-bottom: 2px solid #cda45e;
+        border-right: none;
+        height: 50%;
+    }
+    .spec_meal1, .spec_meal2, .spec_meal3, .spec_meal4, .spec_meal5{
+        flex-direction: column-reverse;
+        left: 10px;
+        top: 350px;
+        width: 95%;
+        height: 90vh;
+    }
+    .gap2{
+        height: 140vh;
+    }
+    .specials_gap{
+        height: 40vh;
+        width: 100%;
+    }
+    .sm_pic{
+        width: 95%;
+    }
+    .sm_pic img{
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+    #events{
+        /* height: 300vh; */
+    }
 }
